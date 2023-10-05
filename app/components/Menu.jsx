@@ -5,7 +5,7 @@ export default function Menu() {
   return (
     <div className=" xl:container xl:mx-auto xl:px-2 lg:h-[780px] bg-[#0B0E11] mb-[220px] lg:mb-[90px]  relative">
       <div className="lg:container lg:mx-auto lg:px-10 relative flex flex-col-reverse">
-        <div className="bg-[#FFFF] h-[420px]  lg:w-[482px]  flex flex-col py-5 lg:mt-[184px]  mt-[600px] z-50   items-center justify-center lg:absolute lg:top-[-60%]">
+        <div className="bg-[#FFFF] h-[420px]  lg:w-[482px]  flex flex-col py-5 lg:mt-[184px]  mt-[260px] z-50   items-center justify-center lg:absolute lg:top-[-60%] ">
           <div className="  lg:w-[442px] w-[100%] my-auto lg:space-y-6  space-y-2  absolute space-x-2 overflow-hidden">
             <h1 className="text-[#f09804] font-bernier text-[44px] font-[400] leading-normal text-left md:px-5 lg:px-1 px-2">
               POULET BRAISE GRILLE
@@ -50,28 +50,36 @@ export default function Menu() {
         </div>
         <div className="mt-[80px] relative lg:w-full  ">
           <div className="overflow-hidden">
-            <div className="absolute z-20 w-[100%] lg:w-[90%] h-[600px]  lg:left-[10%] right-[-10]">
+            <div className="absolute z-20 w-[100%] lg:w-[90%] h-[600px]   lg:left-[10%] right-[-10]">
               <Image
                 src="/Group 41.svg"
                 alt=""
                 width={210}
                 height={210}
-                className="absolute lg:top-[-12%] lg:left-[-10%] top-[-20%] left-[-15%] z-1"
+                className="absolute lg:top-[-12%] lg:left-[-10%] top-[-20%] left-[-15%] z-1 w-[170px] lg:w-[210]  z-10"
               />
               <Image
                 src="/menu_poulet.jpg"
                 fill={true}
                 objectFit="cover"
                 objectPosition="center"
-                className="  absolute z-10 overflow-hidden foodClipe xl:lmr-auto xl:container xl:left:[0%]"
+                className="  absolute hidden lg:block z-10 overflow-hidden foodClipe xl:lmr-auto xl:container xl:left:[0%]"
                 alt=""
               />
+              <Image
+                alt=""
+                src="/menu_poulet.jpg"
+                width={300}
+                height={300}
+                className="w-full lg:hidden z-50"
+              />
+
               <Image
                 src="/Group 5.svg"
                 width={170}
                 height={170}
                 alt=""
-                className="absolute lg:bottom-0 lg:right-[-10%] bottom-[-75%]  right-[0] z-20"
+                className="absolute lg:bottom-0 lg:right-[-10%] bottom-[-75%]  right-[0] z-20 hidden"
                 f
               />
               <Image
@@ -79,7 +87,7 @@ export default function Menu() {
                 width={100}
                 height={70}
                 alt=""
-                className="absolute lg:bottom-[-16%] lg:right-[-3%] bottom-[-90%] right-[20%]  z-20"
+                className="absolute lg:bottom-[-16%] lg:right-[-3%] bottom-[-90%] right-[20%]  z-20 hidden"
               />
             </div>
           </div>

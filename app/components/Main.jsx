@@ -9,9 +9,9 @@ export default function Main() {
         width={212}
         height={111}
         alt=""
-        className="absolute right-0 top-[10%]"
+        className="absolute right-0 top-[10%] lg:w-[212] w-[150px]"
       />
-      <div className="md:container w-full mx-auto lg:px-10 mt-[490px] lg:mt-[90px] ">
+      <div className="md:container w-full mx-auto lg:px-10 mt-[100px] lg:mt-[90px] ">
         <div className="flex flex-col justify-center items-center gap-5 mb-[75px]  mt-[40px] text-center">
           <p className="text-[#F09804] font-normal leading-normal text-[44px] mt-[96px] font-bernier">
             Decouvrez
