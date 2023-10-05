@@ -3,9 +3,9 @@ import Image from "next/image";
 import React, { useState } from "react";
 
 export default function SpecialDish() {
-  const [dish, setDish] = useState(false);
+  const [dish, setDish] = useState(true);
   const [dishSalade, setDishSalade] = useState(true);
-  const [dishDesert, setDishDesert] = useState(false);
+  const [dishDesert, setDishDesert] = useState(true);
   return (
     <div className="lg:h-[882px] bg-[#0B0E11] lg:mt-[110px] mt-[870px] md:mt-[550px]  mb-[110px] relative  ">
       <Image src="/Group 5.svg" width={213} height={117} alt="" />
@@ -30,10 +30,11 @@ export default function SpecialDish() {
             <div className="bg-[url('/_DSC4744.jpg')]   w-full lg:w-[500px] h-[600px] spcSect bg-cover bg-no-repeat absolute opacity-50 "></div>
 
             <div
-              className={`${dish === true
+              className={`${
+                dish === true
                   ? `h-[194px] w-[90%]   bg-white absolute bottom-0 afterClip z-20 hover:cursor-pointer`
                   : "w-[90%] h-[70px]  bg-white absolute bottom-0 spcSect2 z-20 hover:cursor-pointer"
-                } `}
+              } `}
               onClick={() => {
                 setDish(dish === true ? false : true);
               }}
@@ -47,14 +48,8 @@ export default function SpecialDish() {
                     </h1>
                   </div>
                   <div className="flex-col space-y-4 mr-auto w-full pl-6">
-                    <p className="text-[#4E4F51] text-poppins text-[15px] font-400 leading-normal">
-                      Sandwich poulet
-                    </p>
-                    <p className="text-[#4E4F51] text-poppins text-[15px] font-400 leading-normal md:block hidden">
-                      Tacos Dar Djaj
-                    </p>
-                    <p className="text-[#4E4F51] text-poppins text-[15px] font-400 leading-normal md:block hidden">
-                      Sandwich Tandori
+                    <p className="font-bernier text-[#f09804] text-[32px] font-400 leading-normal pl-2">
+                      35 DH
                     </p>
                   </div>
                 </div>
@@ -63,12 +58,13 @@ export default function SpecialDish() {
             <div className="h-[300px] w-full bg-gradient-to-t from-black to-[#0f162200]  absolute  bottom-0 z-1"></div>
           </div>
           <div className="bg-black  w-full h-[600px] relative spcSect">
-            <div className="bg-[url('/_DSC4729.jpg')]  w-full h-[600px] spcSect bg-cover bg-no-repeat absolute opacity-50"></div>
+            <div className="bg-[url('/_DSC4817.jpg')]  w-full h-[600px] spcSect bg-cover bg-no-repeat absolute bg-right opacity-50"></div>
             <div
-              className={`${dishSalade === true
+              className={`${
+                dishSalade === true
                   ? `md:h-[194px] h-[240px] w-[90%]   bg-white absolute bottom-0 afterClip z-20 hover:cursor-pointer`
                   : "w-[90%] h-[70px]  bg-white absolute bottom-0 spcSect2 z-20 hover:cursor-pointer"
-                } `}
+              } `}
               onClick={() => {
                 setDishSalade(dishSalade === true ? false : true);
               }}
@@ -96,10 +92,11 @@ export default function SpecialDish() {
           <div className="bg-black w-full h-[600px] relative spcSect">
             <div className="bg-[url('/_DSC4696.jpg')]  w-full lg:w-[500px] h-[600px] spcSect bg-cover bg-no-repeat absolute opacity-50"></div>
             <div
-              className={`${dishDesert === true
+              className={`${
+                dishDesert === true
                   ? `h-[194px] w-[90%]   bg-white absolute bottom-0 afterClip z-20 hover:cursor-pointer`
                   : "w-[90%] h-[70px]  bg-white absolute bottom-0 spcSect2 z-20 hover:cursor-pointer"
-                } `}
+              } `}
               onClick={() => {
                 setDishDesert(dishDesert === true ? false : true);
               }}
@@ -113,14 +110,8 @@ export default function SpecialDish() {
                     </h1>
                   </div>
                   <div className="flex-col space-y-4 mr-auto w-full pl-6">
-                    <p className="text-[#4E4F51] text-poppins text-[15px] font-400 leading-normal">
-                      Sandwich poulet
-                    </p>
-                    <p className="text-[#4E4F51] text-poppins text-[15px] font-400 leading-normal md:block hidden">
-                      Tacos Dar Djaj
-                    </p>
-                    <p className="text-[#4E4F51] text-poppins text-[15px] font-400 leading-normal md:block hidden">
-                      Sandwich Tandori
+                    <p className="font-bernier text-[#f09804] text-[32px] font-400 leading-normal pl-2">
+                      35 DH
                     </p>
                   </div>
                 </div>

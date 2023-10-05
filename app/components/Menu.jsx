@@ -10,7 +10,7 @@ export default function Menu() {
             <h1 className="text-[#f09804] font-bernier text-[44px] font-[400] leading-normal text-left md:px-5 lg:px-1 px-2">
               POULET BRAISE GRILLE
             </h1>
-            <div className="flex  justify-between items-center md:px-5 lg:px-1   px-4 space-y-2">
+            <div className="flex  justify-between items-center md:px-5 lg:px-1   px-1 space-y-2">
               <p className="text-[#0F1622] font-bernier text-[24px] font-[400] leading-normal text-uppercase">
                 1/4 poulet
               </p>
@@ -21,7 +21,7 @@ export default function Menu() {
                 40DHS
               </p>
             </div>
-            <div className="flex justify-between items-center md:px-5  lg:px-1 px-4">
+            <div className="flex justify-between items-center md:px-5  lg:px-1 px-1">
               <p className="text-[#0F1622] font-bernier text-[24px] font-[400] leading-normal text-uppercase">
                 1/2 poulet
               </p>
@@ -32,7 +32,7 @@ export default function Menu() {
                 80DHS
               </p>
             </div>
-            <div className="flex justify-between items-center md:px-5 lg:px-1 px-4 ">
+            <div className="flex justify-between items-center md:px-5 lg:px-1 px-1 ">
               <p className="text-[#0F1622] font-bernier text-[24px] font-[400] leading-normal text-uppercase">
                 poulet entier
               </p>
@@ -43,7 +43,7 @@ export default function Menu() {
                 145DHS
               </p>
             </div>
-            <h1 className="text-[#F09804] font-bernier text-[26px] font-[400] leading-normal md:px-5 px-1">
+            <h1 className="text-[#F09804] font-bernier text-[26px] font-[400] leading-normal md:px-5  lg:px-1 px-1">
               SERVI AVEC SALADE MAROCAINE SAUCE,RIZ ET FRITE
             </h1>
           </div>

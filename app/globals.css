@@ -220,3 +220,44 @@ imgGradient {
         clip-path: polygon(0 0, 92% 1%, 100% 30%, 100% 100%, 8% 100%, 0 71%);
     }
 }
+
+/* today modification */
+.imgMask1 {
+    background-image: url('/SubtractMask2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    mask-image: url('/SubtractMask2.png');
+    /* border:  3px solid; */
+    background: #000;
+
+}
+
+.imgMask4 {
+    background-image: url('/SubtractMask1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    mask: url('/SubtractMask1.png');
+    /* border: #E3C08D 3px solid; */
+}
+
+.masked {
+    -webkit-mask-image: url('/SubtractMask2.png');
+    mask-image: url('/SubtractMask2.png');
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-position: center;
+    mask-position: center;
+}
+
+.masked2 {
+    -webkit-mask-image: url('/SubtractMask1.png');
+    mask-image: url('/SubtractMask1.png');
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-position: center;
+    mask-position: center;
+}

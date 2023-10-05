@@ -14,7 +14,7 @@ export default function Header() {
         width={240}
         height={20}
         alt=""
-        className="absolute  right-0 top-[25%]  "
+        className="absolute -z-1 opca right-0 top-[25%]  "
       />
       <div className="lg:grid lg:grid-cols-2 text-white  lg:container lg:px-10 px-4 mx-auto  lg:gap-[122px]   mt-50 flex md:flex-row flex-col justify-center">
         <div className=" mt-[88px] w-full  z-50">
@@ -22,14 +22,15 @@ export default function Header() {
             <h1 className=" max-w-md font-[400] lg:text-[44px] text-[35px] Leading-[50.63px] text-[#F09804]  font-bernier">
               Bienvenue a Dar d&apos;jaj
             </h1>
-            <h1 className=" font-poppins lg:text-[50px] text-[30px] font-[600] leading-normal text-[#FFF]">
+            <h1 className=" font-poppins lg:text-[50px] text-[30px] font-[600] leading-normal z-20 text-[#FFF]">
               Votre Restaurant
             </h1>
-            <h1 className=" font-poppins lg:text-[50px] text-[30px] font-[600] lieading-normal w- text-[#FFF] lg:w-auto">
+            <h1 className=" font-poppins lg:text-[50px] text-[30px] font-[600] z-20 lieading-normal w- text-[#FFF] lg:w-auto">
               Unique Et Authentique
             </h1>
 
-            <h1 className=" font-poppins text-[20px] text-[#D4D4D4] font-[400] leading-normal mt-[30px] ">
+            <h1 className=" font-poppins text-[20px] text-[#FFF] font-[400] z-20 leading-normal mt-[30px] ">
+              {/* D4D4D4 */}
               Venez decouvrir le goût inmensurable de notre cuisine
               <br />
               Car la rôtisserie de qualité, c&apos;&apos;est notre métier.
@@ -40,39 +41,30 @@ export default function Header() {
             </button>
           </div>
         </div>
-        <div className=" relative md:mt-[20px]  sm:container px-10 mt-[50px] md:flex md:flex-row flex mx-auto flex-col-reverse    lg:px-0 lg:mx-0    ">
-          <div className=" overflow-hidden">
-            <div className="absolute z-20 lg:right-0  lg:w-[480px]   h-[490px]    clipImage1 mx-auto  w-[320px]">
-              <Image
-                src="/_DSC4793.jpg"
-                alt=""
-                fill
-                objectFit="cover"
-                objectPosition="center"
-                className=" border-[3px] border-[#E3C08D] border-opacity-30   absolute md:z-10    z-50 overflow-hidden"
-              />
-              <span className="border-[2.5px] border-[#E3C08D] border-opacity-30 lg:rotate-[49deg]    rotate-[37.5deg] h-[154px] absolute top-[-4.8%] left-[11.7%] z-50"></span>
-            </div>
-
-            <div className="absolute z-40 md:left-[4%] md:top-[50%]  left-[-10%] top-[100%] lg:mt-[0px] mt-[100px]  w-[245px]   h-[280px] md:mt-[150px] ">
+        <div className="lg:flex  relative  mt-[30px]  ">
+          {/* <div className=" bg-[#E3C08D]  w-[245px] masked h-[290px] lg:top-[35%] lg:left-[10%]  relative mt-[160px]  z-20 lg:mt-0 ">
+            <div className="  w-[235px] h-[280px] masked  absolute mt-[160px]  z-20 lg:mt-0  flex items-center justify-center"></div>
+          </div> */}
+          <div className="masked h-[290px] w-[245px]  bg-[#e3c18d49] flex items-center justify-center  absolute  lg:top-[35%] lg:left-[10%] mt-[135px] lg:mt-[0px]  z-50">
+            <div className="masked w-[240px] h-[285px]">
+              {" "}
               <Image
                 src="/_DSC4816.jpg"
                 alt=""
                 fill
-                objectFit="cover"
-                objectPosition="center"
-                className="clipImage2 h-[280px] w-[245px]  z-10  border-[3px] border-[#E3C08D] border-opacity-30   absolute overflow-hidden"
+                className="object-cover object-center  "
               />
-              <span className="border-[2.5px] border-[#E3C08D]   border-opacity-30  rotate-[140deg]   h-[94px] absolute top-[-3%] right-[14%] z-50"></span>
             </div>
-
-            <Image
-              src="/Group 41.svg"
-              width={312}
-              height={211}
-              alt=" "
-              className="z-10 absolute bottom-[-20%] left-[25%] hidden md:block"
-            />
+          </div>
+          <div className=" w-[80%] masked2 flex items-center justify-center bg-[#e3c18d49]  lg:w-[495px] h-[500px] absolute right-0 ">
+            <div className="masked2 lg:w-[490px] h-[495px] w-[97%]">
+              <Image
+                src="/_DSC4793.jpg"
+                alt=""
+                fill
+                classname="object-cover object-center "
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -94,3 +86,5 @@ export default function Header() {
     </div>
   );
 }
+// /_DSC4793.jpg
+// /_DSC4816.jpg
